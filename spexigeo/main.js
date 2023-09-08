@@ -137,7 +137,6 @@ Webflow.push(function () {
 		let start = '';
 
 		function createScrollTriggers() {
-			console.log(start);
 			gsap.to(feature, {
 				scrollTrigger: {
 					trigger: feature,
