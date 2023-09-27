@@ -299,9 +299,16 @@ function getTransitionEndEventName() {
 }
 
 const dropdowns = new Dropdowns({
-	selector: '.cases__dropdown',
+	selector: '.cases__section .cases__dropdown',
 	openFirst: 1,
 	scrollToOpen: 1,
+	onlyOneOpened: 1
+});
+
+const faqDropdowns = new Dropdowns({
+	selector: '.faq__dropdown',
+	openFirst: 1,
+	scrollToOpen: 0,
 	onlyOneOpened: 1
 });
 
