@@ -189,13 +189,8 @@ function getPixelTranslate(axis) {
             delta = isPhone ? 1.7 : 5.2;
             break;
     }
-    if (window.innerWidth > 767) {
-        factor = 0.694;
-    } else if (window.innerWidth > 467) {
-        factor = 1.304;
-    } else {
-        factor = 2.667;
-    }
+    
+    factor = getComputedStyle(document.documentElement).getPropertyValue('--fontSize');
     return (delta * factor * window.innerWidth) / 100;
 }
 
